@@ -7,9 +7,6 @@ import PropTypes from 'prop-types'
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import journey from "../images/journey.png";
-import journey2 from "../images/journey-2.png";
-import aeiou from "../images/AEIOYouth.png";
 
 function AboutPage({data}) {
   const { aboutUs } = data;
@@ -28,15 +25,15 @@ function AboutPage({data}) {
           data-sal-duration="700"
           data-sal-easing="ease"
         >
-          <div className="lg:my-6 w-full lg:w-1/2">
+          <div className="lg:my-6 w-full lg:w-2/3">
             <h3 className="text-3xl lg:text-4xl font-semibold py-2">
               {aboutUs.frontmatter.title}
             </h3>
             <p className="text-md mt-2 mb-3 lg:mb-6 leading-relaxed font-light">
-              {aboutUs.frontmatter.title}
+              {aboutUs.frontmatter.subtitle}
             </p>
           </div>
-          <div className="my-0 lg:my-6 w-full lg:w-1/2 flex-grow-0">
+          {/* <div className="my-0 lg:my-6 w-full lg:w-1/2 flex-grow-0">
             <Img
               className="rounded-lg"
               fluid={
@@ -44,46 +41,12 @@ function AboutPage({data}) {
               }
               alt="About-Us"
             />
-          </div>
+          </div> */}
         </div>
-      </section>
-
-      <section id="our_story">
-        <div>
-          <div className="lg:flex">
-            <div className="my-4 mt-2 w-full">
-              <div className="w-20 h-1 bg-red-800 rounded-lg self-start mb-2"></div>
-              <div dangerouslySetInnerHTML={{ __html: aboutUs.html }}></div>
-            </div>
-          </div>
-          <div className="lg:flex lg:justify-center mb-12 ">
-          <img className="mx-auto lg:mx-2 w-4/5 lg:w-1/3" alt="journey" src={journey}></img>
-          <img className="mx-auto lg:mx-2  w-4/5 lg:w-1/3" alt="journey" src={journey2}></img>
-          </div>
-          
-        </div>
-      </section>
-
-      <section id="our_story">
-        <div className="lg:flex">
-          <div className="my-4 mt-2 w-full">
-            <div className="w-20 h-1 bg-red-800 rounded-lg self-start mb-2"></div>
-            <h3 className="text-2xl font-semibold tracking-wider ">
-              Our Pillars: AEIO Youth
-            </h3>
-            <p className="text-md mt-2 mb-3 lg:mb-6 leading-relaxed font-light">
-              Youth-Centric Advocacy, Education, Innovation and Outreach
-            </p>
-          </div>
-        </div>
-        <div className="mx-auto w-4/5 md:1/3 lg:w-1/4">
-        <img className="mx-auto mb-12 w-full" alt="aeiou" src={aeiou}></img>
-        </div>
-        
       </section>
 
       <section id="team">
-        <div className="w-20 h-1 bg-red-800 rounded-lg self-start mb-2"></div>
+        <div className="w-20 h-1 bg-primary-700 rounded-lg self-start mb-2"></div>
         <h3 className="text-2xl font-semibold tracking-wider mb-2">The Team</h3>
         <div className="lg:flex lg:flex-wrap lg:justify-center mt-8 lg:mb-12">
           {aboutUs.frontmatter.team.map((staff) => (
@@ -121,13 +84,6 @@ function AboutPage({data}) {
               </div>
             </div>
           ))}
-        </div>
-      
-        <div className="w-full lg:w-2/3 mx-auto p-4 my-4 border-4 border-red-800 rounded-md text-center font-semibold mb-12">
-          <p className='text-center font-bold text-xl mb-4'>Work With Us</p>
-          <p className='text-center text-md text-gray-800 mb-8'>We are on the look out for amazing driven people to work with us in this journey</p>
-          <button className="bg-red-800 hover:bg-red-900 text-sm lg:text-md text-white w-1/3 rounded-md py-2">Join The Team</button>
-          {/* bg-red-800 hover:bg-red-900  text-sm lg:text-md text-white */}
         </div>
       </section>
     

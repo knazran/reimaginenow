@@ -1,19 +1,14 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 
 import Hero from "../components/hero";
 import MainPitch from "../components/main-pitch";
-import Programmes from "../components/programmes";
-import Campaigns from "../components/campaigns";
-import MediaMentions from "../components/media-mentions";
+import Services from "../components/services";
 import Layout from "../components/layout";
-import Partners from "../components/partners";
 import SEO from "../components/seo";
 
-import logo from "../images/undi18-logo2.png";
-// import overflow_logo from "../images/overflow-logo.png";
-// import partner from "../images/partners.jpeg";
+// import logo from "../images/undi18-logo2.png";
 
 export default function IndexPage({ data }) {
   const { posts } = data.campaigns;
@@ -36,16 +31,16 @@ export default function IndexPage({ data }) {
         <MainPitch />
       </section>
 
-      <section id="programmes" className="pt-6 lg:pt-12 container mx-auto px-4 py-0 lg:px-8">
-        <Programmes limit={3}/>
-        <div className='w-full flex justify-center my-4'>
+      <section id="services" className="pt-6 lg:pt-12 container mx-auto px-4 py-0 lg:px-8">
+        <Services/>
+        {/* <div className='w-full flex justify-center my-4'>
           <Link className='w-2/3 lg:w-1/3' to="/programmes">
             <button className='mx-auto w-full bg-red-800 hover:bg-red-900 text-white rounded-lg py-2 px-4'>See More of Our Programmes</button>
           </Link>
-        </div>
+        </div> */}
         
       </section>
-      <div
+      {/* <div
         className="relative w-full mt-0 lg:mt-12 py-6 bg-black flex flex-col justify-center mx-auto px-4 py-0 lg:px-8"
       >
         <div className="w-32 lg:w-56 self-center mr-3">
@@ -57,29 +52,8 @@ export default function IndexPage({ data }) {
             Campaigns for Change
           </h3>
         </div>
-      </div>
+      </div> */}
 
-      <section id="campaigns" className="mt-8 container mx-auto px-4 py-0 lg:px-8">
-        <p className="text-md px-4 lg:px-0 lg:text-xl text-center leading-relaxed font-light text-gray-700 mb-6 lg:mb-8">
-          Join us in affecting change. Let’s work to build a better Malaysia!
-        </p>
-        <Campaigns />
-      </section>
-
-      <section id="media" className="mt-12 lg:mt-20 container mx-auto px-4 py-0 lg:px-8">
-        <MediaMentions />
-      </section>
-
-      <section id="partners">
-        <div
-          data-sal="slide-up"
-          data-sal-duration="700"
-          data-sal-easing="ease"
-          className="my-12 lg:flex container mx-auto px-4 py-0 lg:px-8"
-        >
-          <Partners/>
-        </div>
-      </section>
     </Layout>
   );
 }

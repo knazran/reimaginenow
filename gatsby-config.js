@@ -6,10 +6,10 @@ const fullConfig = resolveConfig(tailwindConfig);
 
 module.exports = {
   siteMetadata: {
-    title: `Undi18`,
-    description: `Promoting a youth-centric agenda and democratic reforms. Undi18 aims to bridge the gap between politicians, policymakers, 
-    and youth. We help Malaysians read and understand policies beyond politics.`,
-    author: `Undi18`,
+    title: `Reimagine Now`,
+    description: `We are a boutique consulting firm cultivating creative strategies, services and solutions for your policy engagement and public affairs consultancy needs.
+    `,
+    author: `Reimagine Now`,
   },
   plugins: [
     `gatsby-plugin-eslint`,
