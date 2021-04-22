@@ -1,9 +1,10 @@
 {
-  "name": "gatsby-starter-tailwind",
+  "name": "reimagine-now-site",
   "description": "Gatsby starter styled with Tailwind",
-  "version": "4.0.0",
-  "author": "Taylor Bryant <taylor@bryant.io>",
+  "version": "1.0.0",
+  "author": "Khairul Nazran <khairulnazran94@gmail.com>",
   "dependencies": {
+    "@ccalamos/gatsby-source-googlemaps-static": "^3.0.1",
     "gatsby": "^2.20.31",
     "gatsby-image": "^2.7.0",
     "gatsby-plugin-anchor-links": "^1.2.0",
