@@ -12,7 +12,7 @@ const MainPitch = () => {
               Cross-disciplinary public affairs expertise
             </h3>
 
-            <p className='text-md lg:text-xl mt-2 mb-6 leading-relaxed text-gray-800'>
+            {/* <p className='text-md lg:text-xl mt-2 mb-6 leading-relaxed text-gray-800'>
               Promoting a youth-centric agenda and democratic reforms. Undi18
               aims to bridge the gap between politicians, policymakers, and
               youth. We help Malaysians read and understand policies beyond
@@ -24,7 +24,7 @@ const MainPitch = () => {
                 className='w-auto text-white text-center py-2 px-8 rounded bg-red-800 hover:bg-red-900'>
                 Read Our Story
               </button>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>
