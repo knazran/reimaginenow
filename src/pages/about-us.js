@@ -100,13 +100,6 @@ export const pageQuery = graphql`
       frontmatter {
         title
         subtitle
-        featuredImage {
-          childImageSharp {
-            fluid(maxWidth: 800, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
         team {
           name
           title
