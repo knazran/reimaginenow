@@ -17,13 +17,13 @@ module.exports = {
     `gatsby-plugin-scroll-reveal`,
     `gatsby-plugin-anchor-links`,
     `gatsby-plugin-netlify-cms`,
-    {
-        resolve: `@ccalamos/gatsby-source-googlemaps-static`,
-        options: {
-            key: ``,
-            center: `41.8781,-87.6298`,
-        },
-    },
+    // {
+    //     resolve: `@ccalamos/gatsby-source-googlemaps-static`,
+    //     options: {
+    //         key: ``,
+    //         center: `41.8781,-87.6298`,
+    //     },
+    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -61,18 +61,18 @@ module.exports = {
         ]
       }
     },
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `reimaginenow`,
-        short_name: `reimaginenow`,
-        start_url: `/`,
-        background_color: fullConfig.theme.colors.white,
-        theme_color: fullConfig.theme.colors.teal["400"],
-        display: `minimal-ui`,
-        icon: `src/images/favicon2.png`,
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-manifest`,
+    //   options: {
+    //     name: `reimaginenow`,
+    //     short_name: `reimaginenow`,
+    //     start_url: `/`,
+    //     background_color: fullConfig.theme.colors.white,
+    //     theme_color: fullConfig.theme.colors.teal["400"],
+    //     display: `minimal-ui`,
+    //     icon: `src/images/favicon2.png`,
+    //   },
+    // },
     // {
     //   resolve: `gatsby-source-filesystem`,
     //   options: {

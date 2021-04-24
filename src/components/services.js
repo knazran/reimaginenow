@@ -53,8 +53,8 @@ const Services = () => {
               key={`services-${idx}`}
               className="mb-12"
             >
-              <h4 className='text-md md:text-xl text-primary-700 tracking-wide uppercase font-semibold'>{service.title}</h4>
-              <p className='text-md md:text-lg mt-2 mb-6 leading-tight text-primary-500'>
+              <h4 className='text-md lg:text-lg 2xl:text-xl text-primary-700 tracking-wide uppercase font-semibold'>{service.title}</h4>
+              <p className='text-md 2xl:text-lg mt-2 mb-6 leading-tight text-primary-500'>
                 {service.subtitle}
               </p>
               
