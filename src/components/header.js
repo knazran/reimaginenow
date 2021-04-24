@@ -5,15 +5,6 @@ import logo from "../images/reimagine-logo-outline.png";
 
 function Header() {
   const [isExpanded, toggleExpansion] = useState(false);
-  // const { site } = useStaticQuery(graphql`
-  //   query SiteTitleQuery {
-  //     site {
-  //       siteMetadata {
-  //         title
-  //       }
-  //     }
-  //   }
-  // `);
 
   return (
     <header className="bg-primary-700 md:px-8">
@@ -45,39 +36,6 @@ function Header() {
             isExpanded ? `block` : `hidden`
           } lg:flex lg:items-center w-full md:w-auto`}
         >
-          {/* {[
-            {
-              route: `/about-us`,
-              title: `About Us`,
-            },
-            {
-              route: `#services`,
-              title: `Services`,
-            },
-            {
-              route: `/campaigns`,
-              title: `Past Projects`,
-            },
-            {
-              route: `/education-videos`,
-              title: `Contact Us`,
-            },
-          ].map((link) => (
-            <Link
-              className="block mt-4 hover:underline no-underline md:inline-block md:mt-2 md:ml-12 text-white font-normal"
-              key={link.title}
-              to={link.route}
-            >
-              {link.title}
-            </Link>
-          ))} */}
-          {/* <a
-            className="block mt-4 hover:underline  no-underline md:inline-block md:mt-2 md:ml-12 text-white font-normal"
-            key="blog"
-            href="https://undi18.wordpress.com"
-          >
-            Blog
-          </a> */}
           <Link
               className="block mt-4 hover:underline no-underline md:inline-block md:mt-2 md:ml-12 text-white font-normal"
               key="About Us"
@@ -99,20 +57,6 @@ function Header() {
             >
             Contact Us
           </Link>
-          {/* <AnchorLink
-            className="block mt-4 text-red-800 hover:text-red-900 no-underline md:inline-block md:mt-2 md:ml-12"
-            key="media"
-            to="/#media"
-          >
-            Media Mentions
-          </AnchorLink>
-          <Link
-            className="block mt-4 bg-red-800 hover:bg-red-900 text-white rounded-lg py-2 px-4 no-underline md:inline-block md:mt-2 md:ml-12"
-            key="recruit"
-            to="/careers"
-          >
-            Join The Team
-          </Link> */}
         </nav>
       </div>
     </header>

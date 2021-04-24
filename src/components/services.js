@@ -2,8 +2,8 @@
 import React from 'react';
 
 import { useStaticQuery, graphql } from 'gatsby';
-import stakeholder from '../images/pd-stakeholder.jpg'
-// import Img from 'gatsby-image';
+// import stakeholder from '../images/pd-stakeholder.jpg'
+import Img from 'gatsby-image';
 
 const Services = () => {
   const data = useStaticQuery(graphql`
@@ -16,8 +16,17 @@ const Services = () => {
           title
           subtitle
         }
+        images {
+          picture {
+            childImageSharp {
+              fluid(maxHeight: 800, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          alt
+        }
       }
-      html
     }
   }
 `);
@@ -52,16 +61,18 @@ const Services = () => {
             </div>
           ))}
         </div>
-        <div className='w-full md:w-1/2 px-24'>
-            <div className="fill-current mb-8">
-              <img className="shadow-lg rounded" alt="Logo Image" src={stakeholder}></img>
+        <div className='w-full md:w-1/2 lg:px-8 2xl:px-24 flex flex-col lg:space-y-32 2xl:space-y-4'>
+          {services.frontmatter.images.map((image) => (
+            <div key={image.alt} className="fill-current">
+              <Img
+                className="shadow-lg rounded"
+                  fluid={
+                    image.picture.childImageSharp.fluid
+                  }
+                  alt={image.alt}
+              />
             </div>
-            <div className="fill-current mb-8">
-              <img className="shadow-lg rounded transform translate-x-16" alt="Logo Image" src={stakeholder}></img>
-            </div>
-            <div className="fill-current mb-8">
-              <img className="shadow-lg rounded" alt="Logo Image" src={stakeholder}></img>
-            </div>
+          ))}
         </div>
       </div>
     </div>

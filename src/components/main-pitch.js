@@ -41,16 +41,12 @@ const MainPitch = () => {
             </h3>
             <div className='lg:w-4/5'>
               <p className='text-md lg:text-xl mt-2 mb-6 leading-snug text-primary-500'>
-                Combining political risk consultancy and conventional public
-                relations approach to deliver robust and impactful advocacy, we
-                specialize in providing progressive solutions to achieve real,
-                long-lasting results.
+                Combining political risk consultancy and conventional public relations approach to deliver robust and impactful advocacy, 
+                we specialize in providing progressive solutions to achieve real results. 
               </p>
-
               <p className='text-md lg:text-xl mt-2 mb-6 leading-snug text-primary-500'>
-                Using a targeted approach, we rethink solutions to increase
-                value to your projects and organization by facilitating an
-                effective and impactful communication plan.
+                Using a targeted approach, we rethink solutions to increase value to your projects and organization by facilitating 
+                effective public affairs communications between business, government and the average Malaysian.
               </p>
               <Link className='' to='/about-us'>
                 <button
