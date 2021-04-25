@@ -3,7 +3,7 @@ import {FaTwitterSquare, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div>
+    <div id='footer'>
       {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 180">
         <path
           fill="#3e64ff"

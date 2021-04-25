@@ -57,13 +57,20 @@ function Header() {
           >
             Past Work
           </AnchorLink>
-          <Link
+          <AnchorLink
+            className="block mt-4 text-white no-underline md:inline-block md:mt-2 md:ml-12"
+            key="contact-us"
+            to="/#footer"
+          >
+            Contact Us
+          </AnchorLink>
+          {/* <Link
               className="block mt-4 hover:underline no-underline md:inline-block md:mt-2 md:ml-12 text-white font-normal"
               key="Contact Us"
               to="/about-us"
             >
             Contact Us
-          </Link>
+          </Link> */}
         </nav>
       </div>
     </header>
