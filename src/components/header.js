@@ -50,6 +50,13 @@ function Header() {
           >
             Services
           </AnchorLink>
+          <AnchorLink
+            className="block mt-4 text-white no-underline md:inline-block md:mt-2 md:ml-12"
+            key="past-work"
+            to="/#past-work"
+          >
+            Past Work
+          </AnchorLink>
           <Link
               className="block mt-4 hover:underline no-underline md:inline-block md:mt-2 md:ml-12 text-white font-normal"
               key="Contact Us"

@@ -4,10 +4,9 @@ import React from "react";
 import Hero from "../components/hero";
 import MainPitch from "../components/main-pitch";
 import Services from "../components/services";
+import PastWork from "../components/past-work";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-
-// import logo from "../images/undi18-logo2.png";
 
 export default function IndexPage() {
   return (
@@ -26,6 +25,9 @@ export default function IndexPage() {
 
       <section id="services" className="pt-6 lg:pt-12 container mx-auto px-4 py-0 lg:px-8">
         <Services/>
+      </section>
+      <section id="past-work" className="pt-6 container mx-auto px-4 py-0 lg:px-8">
+        <PastWork/>
       </section>
       {/* <div
         className="relative w-full mt-0 lg:mt-12 py-6 bg-black flex flex-col justify-center mx-auto px-4 py-0 lg:px-8"
