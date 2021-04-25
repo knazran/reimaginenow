@@ -6,7 +6,7 @@ import { AnchorLink } from 'gatsby-plugin-anchor-links';
 const Hero = () => {
   return (
     <div
-      className='lg:flex pb-4 lg:pb-12 border-b-2 '
+      className='lg:flex pb-4 md:pb-12 border-b-2 '
       data-sal='slide-up'
       data-sal-duration='700'
       data-sal-delay='100'
@@ -14,7 +14,7 @@ const Hero = () => {
       style={{ backgroundImage: `url(${hero})` , backgroundSize: "cover"}}
       >
 
-      <div className='md:mt-8 lg:pr-8 mx-auto container px-4 py-4 lg:px-8 pb-12'>
+      <div className='pt-8 lg:pr-8 mx-auto container px-4 py-4 lg:px-8 pb-12'>
         <div className='w-full lg:w-2/3 flex flex-col xl:mt-12 text-center mx-auto'>
           {/* Hero Title */}
           <h1 className='text-white font-black text-4xl lg:text-6xl leading-tight tracking-wide'
@@ -34,7 +34,7 @@ const Hero = () => {
             <div className='lg:flex w-full'>
               <AnchorLink
                 className='lg:px-4 mx-auto w-full mt-4 lg:mt-0 md:w-3/5 lg:w-1/2 '
-                to='/#programmes'>
+                to='/#services'>
                 <button
                   type='button'
                   className='w-full text-black text-center py-2 px-4 rounded bg-secondary-500 hover:bg-secondary-700'>

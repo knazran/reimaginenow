@@ -30,7 +30,6 @@ const Services = () => {
     }
   }
 `);
-  console.log(data);
   const { services } = data;
 
   return (
@@ -45,13 +44,13 @@ const Services = () => {
         </p>
       </div>
 
-      <div className='md:flex my-16'>
+      <div className='md:flex my-8 md:my-16'>
         <div className='w-full md:w-1/2'>
         {services.frontmatter.services.map((service, idx) => (
             // What we do card
             <div
               key={`services-${idx}`}
-              className="mb-12"
+              className="mb-8 md:mb-12"
             >
               <h4 className='text-md lg:text-lg 2xl:text-xl text-primary-700 tracking-wide uppercase font-semibold'>{service.title}</h4>
               <p className='text-md 2xl:text-lg mt-2 mb-6 leading-tight text-primary-500'>
@@ -61,7 +60,7 @@ const Services = () => {
             </div>
           ))}
         </div>
-        <div className='w-full md:w-1/2 lg:px-8 2xl:px-24 flex flex-col lg:space-y-32 2xl:space-y-4'>
+        <div className='w-full md:w-1/2 lg:px-8 2xl:px-24 flex flex-col space-y-4 lg:space-y-32 2xl:space-y-4'>
           {services.frontmatter.images.map((image) => (
             <div key={image.alt} className="fill-current">
               <Img

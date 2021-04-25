@@ -18,7 +18,7 @@ function Header() {
         </Link>
 
         <button
-          className="flex items-center block px-3 py-2 text-red-800 border border-white rounded lg:hidden"
+          className="flex items-center block px-3 py-2 text-secondary-500 border border-secondary-500 rounded lg:hidden"
           onClick={() => toggleExpansion(!isExpanded)}
         >
           <svg
