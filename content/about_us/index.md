@@ -10,16 +10,28 @@ team:
       email: tharmapillai@reimaginenow.org 
       linkedin: https://www.linkedin.com/in/tharmapillai/
       picture: "../assets/tharma.png"
+      credentials:
+        - Co-Founder of the Undi 18 Constitutional Amendment, 2019
+        - Forbes '30 under 30, 2021
+        - Fellow of the European Union Visitors Programme, 2021
+        - Member of Senate Reform Committee 2019
     - name: Qyira Yusri
       title: Executive Director
       email: qyira@reimaginenow.org
       linkedin: https://www.linkedin.com/in/qyirayusri/
       picture: "../assets/Qyira.jpg"
+      credentials:
+        - Co-Founder of the Undi 18 Constitutional Amendment, 2019
+        - Forbes '30 under 30, 2021
+        - CrossCulture Programme Fellow at the Institut für Auslandsbeziehungen of Germany, 2020
     - name: Chan Zhe Sheng
       title: Executive Director
       email: chan@reimaginenow.org
       linkedin: www.linkedin.com/in/chanzhesheng/
       picture: "../assets/Chan.jpg"
+      credentials:
+        - 6 years of experience working in both public and private sectors, and managing multiple consulting projects in Malaysia and overseas
+others:
     - name: Chow Shenn Kuan
       title: Executive Director
       email: shenn@reimaginenow.org

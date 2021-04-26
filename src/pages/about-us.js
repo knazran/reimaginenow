@@ -10,6 +10,7 @@ import SEO from "../components/seo";
 
 function AboutPage({data}) {
   const { aboutUs } = data;
+  console.log(aboutUs)
 
   return (
     <Layout>
@@ -47,7 +48,7 @@ function AboutPage({data}) {
 
       <section id="team">
         <div className="w-20 h-1 bg-primary-700 rounded-lg self-start mb-2"></div>
-        <h3 className="text-2xl font-semibold tracking-wider mb-2">The Team</h3>
+        <h3 className="text-2xl font-semibold tracking-wider mb-2">Our Leadership</h3>
         <div className="lg:flex lg:flex-wrap lg:justify-center mt-8 lg:mb-12">
           {aboutUs.frontmatter.team.map((staff) => (
             <div key={staff.name} className="mx-auto w-4/5 lg:mx-0 mb-4 lg:w-1/3 lg:items-stretch">
@@ -80,6 +81,14 @@ function AboutPage({data}) {
                       {staff.linkedin}
                     </p> */}
                   </div>
+                   <div className="px-8 py-4">
+                    <ol className="list-disc">
+                      {staff.credentials.map((creds, idx) => {
+                        return (<li className="text-sm leading-relaxed font-light text-gray-600" key={idx} >{creds}</li>)
+                      })}
+                    </ol>
+                   </div>
+                  
                 </div>
               </div>
             </div>
@@ -112,6 +121,7 @@ export const pageQuery = graphql`
               }
             }
           }
+          credentials
         }
       }
       html
