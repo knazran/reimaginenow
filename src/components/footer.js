@@ -1,5 +1,5 @@
 import React from "react";
-import {FaTwitterSquare, FaLinkedin } from "react-icons/fa";
+import {FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -33,11 +33,11 @@ const Footer = () => {
                 Follow Us
               </h4>
               <div className="flex text-white text-2xl">
-                <span className="mr-2">
+                {/* <span className="mr-2">
                   <a href="https://twitter.com/reimaginenoworg ">
                     <FaTwitterSquare />
                   </a>
-                </span>
+                </span> */}
                 <span className="mr-2">
                   <a href="https://www.linkedin.com/company/reimagine-now/ ">
                     <FaLinkedin />

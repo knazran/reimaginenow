@@ -17,12 +17,12 @@ services:
     - title: Program Management
       subtitle: Execute impactful programs and projects aligned with business objectives and advocacy goals. We plan, coordinate, and run many different types of events for our clients, including hackathons, policy briefings, forums, luncheons, round-table style discussions and more.
     - title: Non-Profit Management
-      subtitle: Our Directors, Tharma and Qyira serve as Advocacy Director and Education Director respectively at Undi18, a non-profit, non-partisan organization that supports youth-centric agenda and democratic reforms. In that role, they run meetings, manage budgets and coordinate all events and activities.
+      subtitle: Our Directors, Tharma and Qyira serve as the Advocacy Director and Education Director respectively at Undi18, a non-profit, non-partisan organization that supports youth-centric agenda and democratic reforms. In that role, they run meetings, manage budgets and coordinate all events and activities.
 images:
     - picture: "../assets/services1.jpg"
       alt: "SFD"
     - picture: "../assets/services2.jpg"
       alt: "Parlimen Digital 1"
-    - picture: "../assets/services3.jpg"
+    - picture: "../assets/services4.jpg"
       alt: "Parlimen Digital 2"
 ---
