@@ -16,7 +16,7 @@ const Footer = () => {
           <div className="flex w-full lg:w-1/2">
             <div className="w-1/2 lg:w-full text-white">
               <h4 className="font-semibold text-md mb-4">Contact Us</h4>
-              <p className="text-sm">tharmapillai@reimaginenow.org  </p>
+              <p className="text-sm">contact@reimaginenow.org  </p>
               <p className="text-sm">+6010 659 6061</p>
               <div className="text-sm text-white mt-4">
                 Suite 10-01, Menara Centara, 
