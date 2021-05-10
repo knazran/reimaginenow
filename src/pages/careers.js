@@ -7,8 +7,8 @@ const CareersPage = () => {
   return (
     <Layout>
       <SEO
-        keywords={[`undi18`, `careers`, `hiring`, `internship`]}
-        title="Undi18 Careers"
+        keywords={[`reimaingenow`, `careers`, `hiring`, `internship`]}
+        title="ReimagineNow Careers"
       />
       <div className='container mx-auto px-4 lg:px-8'>
       <section id='intro'>
