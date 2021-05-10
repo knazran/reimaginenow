@@ -43,7 +43,7 @@ function SEO({ description, lang, meta, keywords, title }) {
         },
         {
           property: `og:image`,
-          content: `src/images/favicon2.png`,
+          content: `${favicon}`,
         },
         {
           name: `twitter:card`,
