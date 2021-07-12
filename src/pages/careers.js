@@ -26,22 +26,42 @@ const CareersPage = () => {
             looking for individuals interested in public policy communications with strong creative 
             problem-solving skills. 
             </p>
-            {/* <p className='text-md mb-2 leading-relaxed font-light'>
-              Send your CV to <strong>contact@undi18.org.</strong>
-            </p> */}
           </div>
           <div
             className='my-6 w-full lg:w-1/2 lg:pl-8 flex-grow-0'
             data-sal='slide-left'
             data-sal-duration='700'
             data-sal-easing='ease'>
-            {/* <img
-              className='mx-auto rounded-lg object-center lg:object-right w-full'
-              src={pd_hero}
-            /> */}
           </div>
         </div>
       </section>
+      <section id="open-position">
+        <div className="w-full mb-16">
+          <div className="w-20 h-1 rounded-lg self-start bg-secondary-500 mb-2"></div>
+          <div className="py-2 mb-4 md:mb-8">
+            <h3 className="text-xl lg:text-2xl tracking-wider mb-4 text-black">
+                Open Positions
+            </h3>
+            <h4 className="text-lg lg:text-xl tracking-wider text-primary-500">Senior Associate/Associate, Public Relations </h4>
+            <p className="text-md mb-4 leading-relaxed font-light text-primary-500">
+            Apply by 30th July 2021
+            </p>
+            <a
+                className='mt-4 lg:mt-0 '
+                href='https://drive.google.com/file/d/1Oh2NjyGNanozrusoi7ls8DllJSeMO6RO/view?usp=sharing '
+                target='_blank'
+                rel="noopener noreferrer"
+                >
+                <button
+                  type='button'
+                  className='text-white text-center py-2 px-8 rounded bg-primary-500 hover:bg-primary-700'>
+                  Learn More
+                </button>
+              </a>
+          </div>
+        </div>
+      </section>
+    
       <section id="internship">
         <div className="w-full mb-16">
           <div className="w-20 h-1 rounded-lg self-start bg-secondary-500 mb-2"></div>
