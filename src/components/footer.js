@@ -19,7 +19,7 @@ const Footer = () => {
               <p className="text-sm">contact@reimaginenow.org  </p>
               <p className="text-sm">+6010 659 6061</p>
               <div className="text-sm text-white mt-4">
-                Suite 10-01, Menara Centara, 
+                Menara Centara, 
                 <br></br>
                 Jalan Tuanku Abdul Rahman 
                 <br></br>
